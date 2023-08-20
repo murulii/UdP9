@@ -33,6 +33,7 @@ pipeline {
         stage('Test'){
             steps {
                 sh 'mvn -s settings.xml test'
+		    //u should give settings.xml to download depenencies from nexus repo not on maven repo online
             }
 
         }
