@@ -41,6 +41,7 @@ pipeline {
         stage('Checkstyle Analysis'){
             steps {
                 sh 'mvn -s settings.xml checkstyle:checkstyle'
+		    //u should give settings.xml to download depenencies from nexus repo not on maven repo online
             }
         }
     }
